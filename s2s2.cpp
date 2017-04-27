@@ -3,7 +3,7 @@
 using namespace std;
 int menu(); // la funcion muestra el menu y valida la entrada;retorna opcio;
 int multi();
-
+int factorial();
 int main(){
 
 bool salir = false;
@@ -39,13 +39,13 @@ while(!salir){
 	case 3:{
 		
 		
-		cout<<"Escriba un numero";//divida y conquista tengo un problema y lo hago mas pequeño para hacelro mas facil de resolver>> fin de recursiva
+		//cout<<"Escriba un numero";//divida y conquista tengo un problema y lo hago mas pequeño para hacelro mas facil de resolver>> fin de recursiva
 // algoritmos para resolver problemas por soluciones parciales >>fin de recursiva o back tracking- ejemplo clasico laberinto.
 
-		
-		
-		for(int i=0; i<=)		
-		
+				
+		cout << "Escriba un numero:";
+		cin >>num;
+		cout<< "El factorial de"<<num<<"es:"<<factorial(num)<<endl:
 		
 		break;
 		}
@@ -99,3 +99,14 @@ int multi(int a, int b){
 	
 }
 
+int factorial (int i){
+		if (i<0){
+			return -1;
+	
+		}else if(i==0){
+			return 1;
+		} else{
+			return i*factorial(i-1);
+		}
+	
+}
